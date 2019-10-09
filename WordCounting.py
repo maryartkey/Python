@@ -1,8 +1,13 @@
-textfile = open("C:/Artyom/NEWTXT/Chakrabarty/Shakespeare_Byron.txt", 'r') #Uncomment this to read directly from file
+textfile = open("sonnets.txt", 'r') #Uncomment this to read directly from file
 ######### dim_q should be even! Calculations take about dim_q**2/1000 min !!!
 dim_q =40
 text = textfile.read() #Uncomment this to store all text in text variable
 #text = ("  ") # Put text in .txt file and read from there
+
+line = textfile.readline()
+while line:
+
+
 # Cleaning text and lower casing all words
 for char in '.,:;«»“”!?—"': # symbols to be deleted
     text=text.replace(char,' ')
